@@ -61,7 +61,7 @@ body {
     }
   }
 
-  @media (min-width: 991px) {
+  @media (min-width: 769px) {
     .menu-icon {
       display: none; /* Hide menu icon on larger screens */
     }
