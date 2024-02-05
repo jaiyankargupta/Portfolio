@@ -9,33 +9,65 @@ body {
     background-color: #333; /* Light gray background like paper */
 }
 
-/* Navbar styles */
+
+
 .navbar {
     background-color: #333;
     padding: 15px 0;
-}
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  .nav-link {
+    color: white;
+  }
 
-.navbar-brand {
+  .navbar-brand {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
-}
+    text-transform: uppercase;
+  }
 
-.navbar-nav {
-    text-align: right;
-}
+  .menu-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none; /* Initially hide for larger screens */
+  }
 
-.navbar-nav a {
-    color: #fff;
-    margin-right: 20px;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+  .navbar-collapse {
+    transition: collapse 0.3s ease; /* Add transition for smooth navbar show/hide */
+  }
 
-.navbar-nav a:hover {
-    color: #ffd700; /* Change color on hover */
-}
+  @media (max-width: 768px) {
+    .navbar-brand {
+      margin-left: 15px; /* Add margin for smaller screens */
+    }
+    .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+    }
+    .navbar-collapse {
+      position: absolute;
+      top: 60px; /* Adjust the top position as needed */
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px); /* Add blur effect for smaller screens */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 
 /* Hero section styles */
 .bgimage {
