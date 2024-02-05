@@ -44,7 +44,7 @@ body {
     transition: collapse 0.3s ease; /* Add transition for smooth navbar show/hide */
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     .navbar-brand {
       margin-left: 15px; /* Add margin for smaller screens */
     }
@@ -61,7 +61,7 @@ body {
     }
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 991px) {
     .menu-icon {
       display: none; /* Hide menu icon on larger screens */
     }
