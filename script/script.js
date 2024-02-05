@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 function downloadResume() {
-    // Replace '#' with the actual URL of your resume file
-    window.location.href = 'https://drive.google.com/file/d/1wy-UiAdC4Nk13PdqelKU_Cly5L7hs-pT/view?usp=sharing';
+    // Replace the URL with the shareable link of your resume file
+    window.location.href = 'https://drive.google.com/uc?export=download&id=1wy-UiAdC4Nk13PdqelKU_Cly5L7hs-pT';
 }
+
