@@ -16,3 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         typedTextSpan.textContent = "I am a Web Developer";
     }
 });
+function downloadResume() {
+    // Replace '#' with the actual URL of your resume file
+    window.location.href = 'https://drive.google.com/file/d/1wy-UiAdC4Nk13PdqelKU_Cly5L7hs-pT/view?usp=sharing';
+}
