@@ -11,16 +11,14 @@ body {
 
 
 
-
-  .nav-link {
-    color: white;
-  }
-
-  
- .navbar {
+.navbar {
     background-color: #333;
     padding: 15px 0;
     transition: background-color 0.3s ease;
+    color: white;
+  }
+  .nav-link {
+    color: white;
   }
 
   .navbar-brand {
@@ -35,7 +33,7 @@ body {
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     display: none; /* Initially hide for larger screens */
   }
@@ -61,12 +59,6 @@ body {
     }
   }
 
-  @media (min-width: 769px) {
-    .menu-icon {
-      display: none; /* Hide menu icon on larger screens */
-    }
-  }
-
 
 
 
@@ -79,45 +71,74 @@ body {
 
 /* Hero section styles */
 .bgimage {
-    height: 100vh; /* Adjust the height as needed */
-    /* background: url('header.jpeg'); 
-    background-size: cover; */
+    height: 100vh;
     position: relative;
     overflow: hidden;
     color: black;
     background-color: #333;
-}
+  }
 
-
-.hero-text {
+  .hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
+  }
 
-.hero_title {
-    font-size: 4.5rem;
-    margin-bottom: 20px;
-}
+  .hero_title {
+    font-size: 5.5rem;
+    margin-bottom: 2px;
+    font-weight: 800;
+  }
 
-.hero_desc {
+  .small-text {
+    font-size: 3rem;
+
+  }
+
+  .hero_desc {
     font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .typed-text {
+    display: inline-block;
+  }
+
+  .typed-cursor {
+    animation: blink 0.7s infinite;
+    display: inline-block;
+    transform: translateY(25%);
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .social-links i {
+    transition: color 0.3s ease;
+  }
+
+  .social-links i:hover {
+    color: #007bff;
+  }
+
+
+  .btn.btn-primary {
+    margin-top: 50px;
 }
 
-
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
+  
 /* About section styles */
 #about {
     background-color: #f4f4f4;
@@ -782,4 +803,3 @@ form {
     color: #fff;
     font-size: 20px;
 }
-
