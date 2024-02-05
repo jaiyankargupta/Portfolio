@@ -11,14 +11,16 @@ body {
 
 
 
-.navbar {
+
+  .nav-link {
+    color: white;
+  }
+
+  
+ .navbar {
     background-color: #333;
     padding: 15px 0;
     transition: background-color 0.3s ease;
-    color: white;
-  }
-  .nav-link {
-    color: white;
   }
 
   .navbar-brand {
@@ -33,7 +35,7 @@ body {
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     display: none; /* Initially hide for larger screens */
   }
@@ -56,6 +58,12 @@ body {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.8);
       backdrop-filter: blur(5px); /* Add blur effect for smaller screens */
+    }
+  }
+
+  @media (min-width: 769px) {
+    .menu-icon {
+      display: none; /* Hide menu icon on larger screens */
     }
   }
 
